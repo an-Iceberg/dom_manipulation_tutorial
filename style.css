@@ -1,0 +1,54 @@
+*, *:is(::after, ::before) {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: 1rem "Veranda", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to bottom, midnightblue, steelblue);
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  flex-wrap: nowrap;
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  flex-wrap: nowrap;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+body .container #main-heading {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+body .container ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: nowrap;
+}
+body .container ul .list-items {
+  background-color: #fff;
+  color: midnightblue;
+  text-align: center;
+  width: 100%;
+  padding: 5px 0;
+  list-style: none;
+  font-size: 1.25rem;
+}
+
+/*# sourceMappingURL=style.css.map */

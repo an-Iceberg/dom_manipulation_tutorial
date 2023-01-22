@@ -1,0 +1,50 @@
+@mixin flex($direction: column, $content: center, $align: center, $gap: 0px, $wrap: nowrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $align;
+  gap: $gap;
+  flex-wrap: $wrap;
+}
+
+*, *:is(::after, ::before) {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: 1rem "Veranda", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to bottom, midnightblue, steelblue);
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+  @include flex();
+
+  .container {
+    @include flex();
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 20px;
+
+    #main-heading {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      width: 100%;
+      @include flex($gap: 2px);
+
+      .list-items {
+        background-color: #fff;
+        color: midnightblue;
+        text-align: center;
+        width: 100%;
+        padding: 5px 0;
+        list-style: none;
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
