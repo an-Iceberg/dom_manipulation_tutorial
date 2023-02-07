@@ -20,7 +20,7 @@
       "label": "Vite",
       "type": "shell",
       // "command": "",
-      "command": "npx vite", // npx vite
+      "command": "vite",
       "group": "build",
     },
 
